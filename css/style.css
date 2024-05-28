@@ -1,0 +1,100 @@
+* { 
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ list-style: none;
+ text-decoration: none;
+ border: none;
+ outline: none;
+ scroll-behavior: smooth;
+ font-family: 'Open-Sans', sans-serif;
+}
+
+:root {
+    --text-color: #fff;
+    --bg-color: #000;
+    --main-color: #ffa343;
+
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+} 
+
+/* Header i Navbar */
+ 
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 2rem 17%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.ry {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 1rem 1.5rem;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.h-right {
+    display: flex;
+}
+
+.h-right a:first-child {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+}
+
+.h-right a {
+    vertical-align: middle;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    transition: all .50s ease;
+}
+
+.h-right a:hover {
+    color: var(--main-color);
+    transform: scale(1);
+}
+
+#menu-icon {
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
