@@ -340,3 +340,37 @@ header.sticky {
        margin-bottom: 2rem;
    }
 
+.newsletter-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+.newsletter-text h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.newsletter-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: #ffffffab;
+}
+
+.newsletter-content form {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 1rem;
+}
+
+.newsletter-content form input:first-child{
+    padding: 1rem;
+    font-size: var(--p-font);
+    background: #202020;
+    color: var(--text-color);
+    border-radius: 5px;
+    height: 50%;
+    margin-top: 2rem;
+}
