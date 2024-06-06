@@ -300,5 +300,43 @@ header.sticky {
 .center-btn {
     text-align: center;
     margin-top: 3rem ;
-
 }
+
+.culture {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 9rem;
+    
+   }
+   
+.culture-img img {
+       width: 100%;
+       height: auto;
+       border-radius: 10px;
+   }
+   
+.culture-text h5 {
+       font-size: 2rem;
+       font-weight: 600;
+       color:var(--main-color);
+       text-transform: uppercase;
+       letter-spacing: 0.5rem;
+       margin-bottom: 1.4rem;
+   }
+   
+.culture-text h2 {
+       font-size: var(--h2-font);
+       font-weight: 800;
+       line-height: 3rem;
+       margin-bottom: 1.5rem;
+   }
+   
+.culture-text p {
+       font-size: var(--p-font);
+       font-weight: 500;
+       line-height: 1.5rem;
+       color: #ffffffab;
+       margin-bottom: 2rem;
+   }
+
