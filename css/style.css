@@ -160,3 +160,85 @@ section {
     border: 2px solid var(--main-color);
     color: var(--text-color);
 }
+
+header.sticky {
+    padding: 0.5rem 7%;
+    background-color: var(--bg-color);    
+}
+
+.feature-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.row-img {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.row-img img {
+    width: 100%;
+    display: block;
+    transition: ease all .4s;
+
+}
+
+.row-img img:hover {
+    transform: scale(1.2);
+}
+
+.feature-content h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.feature-content h4:hover {
+    color: var(--main-color);
+}
+
+.holiday {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ align-items: center;
+ gap: 9rem;
+}
+
+.holiday-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.holiday-text h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.holiday-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.holiday-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #ffffffab;
+    margin-bottom: 2rem;
+}
