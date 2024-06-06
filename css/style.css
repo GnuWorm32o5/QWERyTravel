@@ -254,7 +254,7 @@ header.sticky {
 
 .tour-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
     gap: 3rem;
     margin-top: 5rem;
@@ -373,4 +373,80 @@ header.sticky {
     border-radius: 5px;
     height: 50%;
     margin-top: 2rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 15rem;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-box a {
+    color: #979797;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    transition: all .50s ease;
+}
+
+.footer-box a:hover {
+    transform: translateX(-3px);
+    color: var(--text-color);
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background: #202020;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: all ease .6s;
+}
+
+.social a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.copyright {
+    height: 3rem;
+    width: 100%;
+    color: #ffffffab;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+@media (max-width: 1700px) {
+    header {
+        padding: 1rem 8%;
+    }
+
+    header.sticky {
+        padding: 7px 8%;
+    }
+
+    section{
+        padding: 50px 8% 40px;
+    }
 }
